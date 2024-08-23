@@ -1,0 +1,168 @@
+@import "./variables.scss";
+@import "./breakpoints.scss";
+
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  &:hover {
+    @include shadow;
+  }
+
+  .user-card-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .user-card-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-left: 15px;
+  }
+
+  .user-card-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .left_u {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 5;
+      margin-left: 15px;
+      b {
+        color: black;
+        font-weight: 500;
+      }
+
+      h3 {
+        margin-bottom: -5px;
+        font-size: 1.2em;
+      }
+
+      .email {
+        font-weight: 800;
+        font-size: 11px;
+        margin-bottom: -5px;
+        color: #666666a9;
+      }
+
+      .p1 {
+        margin: 2px 0;
+        color: #666;
+        position: relative;
+        top: 5px;
+      }
+      .p2 {
+        color: #666;
+        margin: 0;
+      }
+    }
+    .right_u {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: space-between;
+      .fl {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        // border: 1px solid rgba(0, 0, 0, 0.432);
+        // padding-left: 10px;
+        // padding-right: 10px;
+        // border-radius: 7px;
+
+        background-color: #c2fbd7;
+        border-radius: 100px;
+        box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+          rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+          rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+          rgba(44, 187, 99, 0.15) 0 16px 32px;
+        color: green;
+        cursor: pointer;
+        display: inline-block;
+        font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto,
+          sans-serif;
+        padding: 7px 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 250ms;
+        border: 0;
+        font-size: 16px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        &:hover {
+          // @include shadow;
+
+          box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+            rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+            rgba(44, 187, 99, 0.25) 0 4px 8px,
+            rgba(44, 187, 99, 0.25) 0 8px 16px,
+            rgba(44, 187, 99, 0.25) 0 16px 32px;
+          transform: scale(1.05) rotate(-1deg);
+        }
+      }
+      .delete-button {
+        // background-color: #ff4c4c;
+        // color: white;
+        // border: none;
+        // border-radius: 5px;
+        // padding: 5px 10px;
+        // cursor: pointer;
+        // transition: background-color 0.3s;
+
+        background-color: initial;
+        background-image: linear-gradient(-180deg, #ff7e31, #e62c03);
+        border-radius: 100px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue",
+          Arial, sans-serif;
+        height: 40px;
+        line-height: 40px;
+        outline: 0;
+        overflow: hidden;
+        padding: 0 10px;
+        pointer-events: auto;
+        position: relative;
+        text-align: center;
+        touch-action: manipulation;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: top;
+        white-space: nowrap;
+        width: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        z-index: 9;
+        border: 0;
+        transition: box-shadow 0.2s;
+
+        &:hover {
+          // background-color: #ff1f1f;
+          // @include shadow;
+          box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+        }
+      }
+    }
+  }
+}

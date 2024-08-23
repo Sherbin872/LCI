@@ -1,0 +1,33 @@
+.custom-date-range {
+  .rdrCalendarWrapper {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .rdrMonthAndYearPickers select {
+    background-color: #3ecf8e;
+    color: white;
+  }
+
+  .rdrDayNumber span {
+    color: #3ecf8e;
+  }
+
+  .rdrDayDisabled .rdrDayNumber span {
+    color: #ccc;
+  }
+
+  .booked-date {
+    position: relative;
+    display: inline-block;
+  }
+
+  .cross-mark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

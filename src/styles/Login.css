@@ -1,0 +1,102 @@
+:export {
+  pinkred: #F8395A;
+  blue: #24355A;
+  lightgrey: #F7F8F8;
+  grey: #bdb9b9;
+  darkgrey: #969393;
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../../public/assets/login.jpg") center;
+  background-size: cover;
+}
+.login_content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+@media (max-width: 1000px) {
+  .login_content {
+    width: 60%;
+  }
+}
+@media (max-width: 580px) {
+  .login_content {
+    width: 80%;
+  }
+}
+.login_content_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.login_content_form input {
+  width: 100%;
+  padding: 7px 15px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  text-align: center;
+  color: white;
+}
+.login_content_form input input:not(:-moz-placeholder-shown):focus {
+  background: transparent; /* or background: none; */
+}
+.login_content_form input input:not(:placeholder-shown):focus {
+  background: transparent; /* or background: none; */
+}
+.login_content_form input::-moz-placeholder {
+  color: white;
+}
+.login_content_form input::placeholder {
+  color: white;
+}
+.login_content_form button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #F8395A;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 10px;
+  width: 50%;
+}
+.login_content_form button:hover {
+  box-shadow: 0 0 10px 3px rgb(255, 255, 255);
+}
+.login_content_google {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.login_content a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+.login_content a:hover {
+  text-decoration: underline;
+}
+.login_content p {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}/*# sourceMappingURL=Login.css.map */

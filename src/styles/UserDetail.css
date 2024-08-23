@@ -1,0 +1,95 @@
+.user-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+.user-detail .user-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+.user-detail .user-info .user-profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+.user-detail .user-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.user-detail .user-info p {
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0;
+}
+.user-detail .user-listings {
+  width: 100%;
+  max-width: 1200px;
+}
+.user-detail .user-listings h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.user-detail .user-listings .listings {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.user-detail .user-listings .listing-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.user-detail .user-listings .listing-card img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.user-detail .user-listings .listing-card .listing-card-content {
+  padding: 15px;
+  text-align: center;
+}
+.user-detail .user-listings .listing-card .listing-card-content h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.user-detail .user-listings .listing-card .listing-card-content p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+.user-detail .user-listings .listing-card .listing-card-content button {
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+.user-detail .user-listings .listing-card .listing-card-content button:hover {
+  background-color: #ff7875;
+}/*# sourceMappingURL=UserDetail.css.map */

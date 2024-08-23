@@ -1,0 +1,26 @@
+.custom-date-range .rdrCalendarWrapper {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.custom-date-range .rdrMonthAndYearPickers select {
+  background-color: #3ecf8e;
+  color: white;
+}
+.custom-date-range .rdrDayNumber span {
+  color: #3ecf8e;
+}
+.custom-date-range .rdrDayDisabled .rdrDayNumber span {
+  color: #ccc;
+}
+.custom-date-range .booked-date {
+  position: relative;
+  display: inline-block;
+}
+.custom-date-range .cross-mark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+}/*# sourceMappingURL=CustomDateRange.css.map */

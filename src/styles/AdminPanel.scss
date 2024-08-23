@@ -1,0 +1,40 @@
+body {
+  padding-top: 10px;
+}
+.admin-panel {
+  // background-color: rgba(37, 37, 37, 0.075);
+  // border-top: 1px solid #b6b4b4;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(37, 37, 37, 0.103);
+  padding-bottom: 40px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  .head {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      p {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        span {
+          margin-left: 10px;
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
